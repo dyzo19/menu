@@ -1,0 +1,120 @@
+/* styles.css */
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #008C45 !important; /* Ferrari red color */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important; /* Set text color to black */
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+    color: #dc3545 !important; /* Set text color to yellow on hover */
+}
+
+body{
+    background-color: #6c757d;
+    color: aliceblue;
+    background-image: url('italy3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This keeps the background image fixed while scrolling */
+}
+
+.carousel-item img {
+    max-height: 900px; /* Adjust the max-height as needed */
+    max-width: 1800px;
+    margin: auto; /* Center the images horizontally */
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.row {
+    text-align: center;
+}
+
+.col {
+    background-color: #008C45; /* Set background color for content boxes */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.form-control {
+    border-color: #dc3545; /* Set border color to Ferrari red */
+}
+
+.btn-outline-success {
+   /* border-color: #e2e2e2; /* Set border color to Bootstrap success color */
+    color: #e2e2e2; /* Set text color to Bootstrap success color */
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745; /* Set background color on hover */
+    color: #fff; /* Set text color to white on hover */
+}
+
+.card {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    display: none;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    width: calc(33.33% - 20px); /* 33.33% width for each card with margin between cards */
+    margin-bottom: 20px; /* Space between rows */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a better look */
+}
+
+.card img {
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(187, 187, 187);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+.card:hover .card-text {
+    text-align: center;
+    border-color: #23d83b; /* Change border color on hover */
+    transform: scale(1.05); /* Scale the card slightly on hover */
+    display: block;
+    opacity: 50%;
+}
